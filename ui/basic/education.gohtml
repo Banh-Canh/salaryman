@@ -1,0 +1,15 @@
+{{if .Education}}
+    <div class="educations">
+        <div class="subtitle">{{.Labels.Education}}</div>
+        {{ range .Education }}
+            <div class="element">
+                <div class="degree">
+                    {{.StudyType}} {{.Area}} | {{.Institution}}
+                </div>
+                <small class="location-date">
+                    {{.Location}}, {{ formatDate "Jan, 2006" .EndDate $.Meta.Lang }}
+                </small>
+            </div>
+        {{end}}
+    </div>
+{{end}}

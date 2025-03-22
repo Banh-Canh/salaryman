@@ -1,0 +1,31 @@
+{{if .Work}}
+    <div class="experiences">
+        <div class="subtitle">
+            {{.Labels.Experiences}}
+        </div>
+        {{$since := .Labels.Since}}
+        {{range .Work}}
+            <div class="element">
+                <div class="position">
+                    {{.Position}}
+                    {{if .ContractType}}(.ContractType){{end}}
+                    <span>| {{.Company}}</span>
+                </div>
+
+                <div class="dates">
+                    <span>{{.Location}}</span>
+                    |
+                    {{if .EndDate}}
+                        {{ formatDate "Jan, 2006" .StartDate $.Meta.Lang }} - {{ formatDate "Jan, 2006" .EndDate $.Meta.Lang }}
+                    {{else}}
+                        {{$since}} {{ formatDate "Jan, 2006" .StartDate $.Meta.Lang }}
+                    {{end}}
+                </div>
+
+                <div class="description">
+                    {{.Summary}}
+                </div>
+            </div>
+        {{end}}
+    </div>
+{{end}}

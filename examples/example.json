@@ -1,0 +1,192 @@
+{
+  "basics": {
+    "name": "Victor Hang",
+    "email": "vhvictorhang@gmail.com",
+    "phone": "0605436710",
+    "label": "Site Reliability Engineer",
+    "image": "https://media.licdn.com/dms/image/v2/C4D03AQHM8HRqFkWLsA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1614797119733?e=1747872000&v=beta&t=K9x5slkB47_vLwXXtilve8pak5ebsiMizeWCiPzj0EE",
+    "location": {
+      "city": "Bordeaux",
+      "region": "Aquitaine",
+      "countryCode": "FR"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Victor Hang",
+        "url": "https://www.linkedin.com/in/victor-hang"
+      },
+      {
+        "network": "Github",
+        "username": "Banh-Canh",
+        "url": "https://github.com/Banh-Canh"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "S3NS",
+      "position": "Site Reliability Engineer",
+      "startDate": "2023-06-01",
+      "summary": "Site Reliability Engineer specializing in Compute & Virtualization for S3NS, a Thales-Google Cloud partnership delivering secure and sovereign cloud solutions. Responsible for designing, automating, and optimizing Kubernetes-based infrastructure for the internal IaaS, ensuring high availability, security, and compliance with SecNumCloud regulations.",
+      "highlights": [
+        "Kubernetes, Kubevirt, KubeOVN, NixOS, Golang, Kubebuilder, GCP"
+      ]
+    },
+    {
+      "company": "SFEIR",
+      "position": "DevOps Consultant at Orange Business Service",
+      "startDate": "2022-11-01",
+      "endDate": "2023-06-01",
+      "summary": "DevOps Consultant at SFEIR, providing Level 3 expertise for Orange Business Services. Focused on designing, automating, and securing cloud-native infrastructures using Kubernetes, Terraform, and GitOps methodologies. Ensured high availability, scalability across AWS environments, Vault, and observability tools like Prometheus, Thanos, and Grafana.",
+      "highlights": ["Kubernetes, Saltstack, Terraform, AWS"]
+    },
+    {
+      "company": "CHEOPS TECHNOLOGY",
+      "position": "DevOps Administrator | SysOps",
+      "startDate": "2021-06-01",
+      "endDate": "2022-10-01",
+      "summary": "DevOps Administrator at CHEOPS TECHNOLOGY, part of a DevOps squad designing a Kubernetes-as-a-Service platform. Built and maintained Kubernetes environments with Ansible, ArgoCD, and GitLab CI/CD, ensuring high availability and scalability. Managed authentication and security with HashiCorp Vault and Keycloak.",
+      "highlights": ["Kubernetes, Ansible"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "ib - groupe Cegos",
+      "area": "DevOps Consultant",
+      "startDate": "2021",
+      "endDate": "2021",
+      "courses": ["Docker", "Kubernetes", "Python", "Ansible", "AWS", "Jenkins"]
+    },
+    {
+      "institution": "EPSI",
+      "area": "Network and System Administration",
+      "startDate": "2020",
+      "endDate": "2020",
+      "courses": [
+        "TCP/IP",
+        "Linux",
+        "Windows Server",
+        "Scripting",
+        "MS SQL Server",
+        "Oracle SQL Server"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "title": "GCP Architect",
+      "date": "2023-09",
+      "issuer": "Google Cloud Skills Boost"
+    },
+    {
+      "title": "CKA Kubernetes Administrator",
+      "date": "2022-02",
+      "issuer": "Linux Foundation"
+    },
+    {
+      "title": "Gitlab Associate",
+      "date": "2021-04",
+      "issuer": "Gitlab"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Home Cluster",
+      "description": "Kubernetes-as-a-Service platform with multi-tenancy using Kamaji, Vault, Zitadel, and NixOS to deploy and manage media and domotic apps for personal use, ensuring security, scalability, and reproductibility.",
+      "url": "https://github.com/Bealvio/bealv",
+      "highlights": [
+        "Kubernetes, ClusterAPI",
+        "NixOS, Proxmox",
+        "Github Actions",
+        "Golang, Kubebuilder"
+      ]
+    },
+    {
+      "name": "yTui",
+      "description": "ytui is a TUI tool that allows users to query videos on youtube and play them in their local player.",
+      "url": "https://github.com/Banh-Canh/ytui",
+      "highlights": ["Golang, Cobra, Viper"]
+    },
+    {
+      "name": "ginx",
+      "description": "Ginx is a cli tool that watch a remote repository and run an arbitrary command on changes/updates. It can be used to trigger nixos-rebuild on git push.",
+      "url": "https://github.com/didactiklabs/ginx",
+      "highlights": ["Golang, Cobra, Viper"]
+    },
+    {
+      "name": "NixBook",
+      "description": "NixOS configuration for Laptops with customizable profiles and modules.",
+      "url": "https://github.com/didactiklabs/nixbook",
+      "highlights": ["NixOS"]
+    },
+    {
+      "name": "NixOS-Server",
+      "description": "NixOS Server configuration with full gitops deployment for multiple kubernetes clusters",
+      "url": "https://github.com/didactiklabs/nixOS-server",
+      "highlights": ["NixOS"]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Cloud & Infrastructure",
+      "keywords": [
+        "Kubernetes",
+        "Kubevirt",
+        "Cluster API",
+        "Vault",
+        "FluxCD/ArgoCD",
+        "Monitoring"
+      ]
+    },
+    {
+      "name": "Development & Automation",
+      "keywords": [
+        "Golang",
+        "Kubebuilder",
+        "Python",
+        "Git",
+        "Docker",
+        "Terraform",
+        "Ansible",
+        "Saltstack"
+      ]
+    },
+    {
+      "name": "Systems & Databases",
+      "keywords": ["NixOS", "Flatcar", "Debian", "RedHat", "Postgres", "MySQL"]
+    }
+  ],
+  "interests": [
+    {
+      "name": "Coding",
+      "keywords": ["golang", "infrastructure", "kubernetes", "nix"]
+    },
+    {
+      "name": "Gym",
+      "keywords": ["running", "weightlifting"]
+    },
+    {
+      "name": "Concerts",
+      "keywords": ["classical", "j-pop", "pop", "jazz", "funk", "electro"]
+    },
+    {
+      "name": "Travels",
+      "keywords": ["Japan", "Italy", "UK"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "French",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional"
+    }
+  ],
+  "meta": {
+    "template": "stackoverflow",
+    "lang": "en_US"
+  }
+}

@@ -1,0 +1,14 @@
+{{if .Languages}}
+    <div class="languages">
+        <div class="subtitle">{{.Labels.Languages}}</div>
+        <div class="item">
+            {{range $index, $lang := .Languages}}
+                <a class="value">
+                    {{$lang.Language}}
+                    {{if $lang.Fluency}}({{$lang.Fluency}}){{end}}
+                    {{if not (isLast $index (len $.Languages))}},{{end}}
+                </a>
+            {{end}}
+        </div>
+    </div>
+{{end}}

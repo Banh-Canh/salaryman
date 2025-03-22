@@ -1,0 +1,23 @@
+<div class="contact">
+    <div class="subtitle">Contact</div>
+    <div class="element">
+        {{if .Email}}
+            <div class="value"><a class="link" href="mailto:{{.Email}}">{{.Email}}</a></div>
+        {{end}}
+        {{if .Phone}}
+            <div class="value"><a class="link" href="tel:{{.Phone}}">{{.Phone}}</a></div>
+        {{end}}
+
+        {{range .Profiles}}
+            <div class="value"><a class="link" href="{{.URL}}">{{.Network}}</a></div>
+        {{end}}
+
+        {{if .URL}}
+            <div class="value"><a class="link" href="{{.URL}}">{{trimURLPrefix .URL}}</a></div>
+        {{end}}
+
+        {{if .Location}}
+            <div class="value"><a>{{displayLocation .Location}}</a></div>
+        {{end}}
+    </div>
+</div>
