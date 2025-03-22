@@ -1,0 +1,33 @@
+<div class="contact">
+    <ul>
+        {{if .Email}}
+            <li>
+                <a
+                        href="mailto:{{.Email}}"
+                        target="_blank"
+                >{{.Email}}</a
+                >
+            </li>
+        {{end}}
+        {{if .Phone}}
+            <li>
+                <a href="tel:{{.Phone}}">{{.Phone}}</a>
+            </li>
+        {{end}}
+        {{if .Location}}
+            <li>
+                <a>{{ (displayLocation .Location) }}</a>
+            </li>
+        {{end}}
+        {{if .URL}}
+            <li>
+                <a href="{{.URL}}" target="_blank">{{trimURLPrefix .URL}}</a>
+            </li>
+        {{end}}
+        {{range .Profiles}}
+            <li>
+                <a href="{{.URL}}" target="_blank">{{.Network}}</a>
+            </li>
+        {{end}}
+    </ul>
+</div>

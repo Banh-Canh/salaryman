@@ -1,0 +1,10 @@
+{{if .Interests}}
+    <div class="hobbies">
+        <div class="subtitle">{{.Labels.Interests}}</div>
+        <div class="item">
+            {{range $index, $hobbie := .Interests}}
+                <span class="value">{{$hobbie.Name}} {{if not (isLast $index (len $.Interests))}},{{end}} </span>
+            {{end}}
+        </div>
+    </div>
+{{end}}

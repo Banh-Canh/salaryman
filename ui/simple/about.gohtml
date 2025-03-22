@@ -1,0 +1,37 @@
+<div class="about">
+    <div class="name">
+        <span class="last-name">{{getLastName .Name}}</span> <span class="first-name">{{getFirstName .Name}}</span>
+    </div>
+
+    <div class="job-position">
+        {{.Label}}
+    </div>
+
+    <div class="contact">
+        {{if .Phone}}
+            <div class="phone">
+                <a href="tel:{{.Phone}}">{{.Phone}}</a>
+            </div>
+        {{end}}
+        {{if .Email}}
+            <div class="email">
+                <a href="mailto:{{.Email}}">{{.Email}}</a>
+            </div>
+        {{end}}
+
+        <div class="socials">
+            {{if .URL}}
+                <a href="{{.URL}}">{{trimURLPrefix .URL}}</a>
+            {{end}}
+            {{range .Profiles}}
+                <a href="{{.URL}}">{{.Network}}</a>
+            {{end}}
+        </div>
+
+        {{if .Location}}
+            <div class="location">
+                <a>{{displayLocation .Location}}</a>
+            </div>
+        {{end}}
+    </div>
+</div>
