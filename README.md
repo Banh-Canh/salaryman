@@ -36,7 +36,7 @@ See [Documentations](docs/salaryman.md).
 
 Create a JSON file with your resume data. You can specify the file path using the `file` flag.
 
-<i>You can see a json file example in [examples/example.resume.json](examples/example.resume.json)</i>
+<i>You can see a json file example in [examples/example.json](examples/example.json)</i>
 
 Run the following command to generate the resume in PDF and HTML formats:
 
@@ -49,7 +49,7 @@ Using Nix:
 
 ```shell
 nix-shell
-salaryman -f data/resume.json -o cv.pdf
+salaryman local -f data/resume.json -o cv.pdf
 ```
 
 The generated resume files (`resume.pdf` and `resume.html`) will be saved in the `output` directory.
@@ -73,7 +73,7 @@ salaryman server
 ```
 
 Send a POST request to `http://localhost:9000/pdf` with the JSON resume data in the request body.
-You can use the example JSON data provided in [examples/example.resume.json](examples/example.resume.json).
+You can use the example JSON data provided in [examples/example.json](examples/example.json).
 
 In server mode, the html and pdf files will be outputed to the path you set in `SALARYMAN_OUTPUTDIR`.
 
@@ -85,7 +85,7 @@ curl -X POST http://localhost:9000/pdf -H "Content-Type: application/json" -d @e
 
 The server will generate the resume in PDF format and return it as a response.
 
-e.g example json data request in [examples/example.resume.json](examples/example.resume.json)
+e.g example json data request in [examples/example.json](examples/example.json)
 
 ## Templates
 
@@ -128,7 +128,7 @@ This will automatically translate labels such as "Education," "Experiences," and
 language.
 
 To set the language for your resume, include the following field in the JSON resume data:
-e.g [examples/example.resume.json](examples/example.resume.json)
+e.g [examples/example.resume.json](examples/example.json)
 
 ```json
 "lang": "fr_FR"
