@@ -42,7 +42,7 @@ Run the following command to generate the resume in PDF and HTML formats:
 
 ```shell
 go run *.go local -f="data/resume.json" -o="cv.pdf"
-go run *.go local -f="data/resume.json" -o="cv.html --html"
+go run *.go local -f="data/resume.json" -o="cv.html" --html
 ```
 
 Using Nix:
