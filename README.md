@@ -91,12 +91,12 @@ e.g example json data request in [examples/example.json](examples/example.json)
 
 Salaryman provides the following templates for generating resumes:
 
-- Classic
-- Basic
-- Simple
-- Oldman
-- Stackoveoverflow
-- Modern
+- Classic: [Example](examples/classic.pdf)
+- Basic: [Example](examples/basic.pdf)
+- Simple: [Example](examples/simple.pdf)
+- Oldman: [Example](examples/oldman.pdf)
+- Stackoveoverflow: [Example](examples/stackoverflow.pdf)
+- Modern: [Example](examples/modern.pdf)
 
 To use a specific template, specify the template name in the JSON resume data:
 
