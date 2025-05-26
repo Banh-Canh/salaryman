@@ -7,7 +7,7 @@ toolchain go1.23.6
 require (
 	github.com/chromedp/cdproto v0.0.0-20250319231242-a755498943c8
 	github.com/chromedp/chromedp v0.13.3
-	github.com/gin-gonic/gin v1.10.0
+	github.com/gin-gonic/gin v1.10.1
 	github.com/json-iterator/go v1.1.12
 	github.com/nicksnyder/go-i18n/v2 v2.2.1
 	github.com/pkg/errors v0.9.1
