@@ -11,7 +11,7 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/ruang-guru/monday v1.0.3
 	github.com/spf13/cobra v1.9.1
-	golang.org/x/text v0.23.0
+	golang.org/x/text v0.28.0
 )
 
 require (
