@@ -102,6 +102,24 @@
       ]
     },
     {
+      "name": "MaxTac",
+      "description": "MaxTac is a Kubernetes controller that simplifies and automates the management of NetworkPolicy resources. It works by introducing two Custom Resource Definitions (CRDs), Access and ExternalAccess, which allow you to define network connectivity rules at a higher level of abstraction.",
+      "url": "https://github.com/Banh-Canh/MaxTac",
+      "highlights": ["Golang, Kubebuilder, Kubernetes"]
+    },
+    {
+      "name": "Songbird",
+      "description": "Cli to evaluate network policies configuration to check for connectivity in your Kubernetes cluster.",
+      "url": "https://github.com/Banh-Canh/songbird",
+      "highlights": ["Golang, Kubernetes"]
+    },
+    {
+      "name": "ginx",
+      "description": "Ginx is a cli tool that watch a remote repository and run an arbitrary command on changes/updates. It can be used to trigger nixos-rebuild on git push.",
+      "url": "https://github.com/didactiklabs/ginx",
+      "highlights": ["Golang, Cobra, Viper"]
+    },
+    {
       "name": "ginx",
       "description": "Ginx is a cli tool that watch a remote repository and run an arbitrary command on changes/updates. It can be used to trigger nixos-rebuild on git push.",
       "url": "https://github.com/didactiklabs/ginx",
