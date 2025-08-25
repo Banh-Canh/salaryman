@@ -119,12 +119,6 @@
       "highlights": ["Golang, Kubernetes"]
     },
     {
-      "name": "ginx",
-      "description": "Ginx is a cli tool that watch a remote repository and run an arbitrary command on changes/updates. It can be used to trigger nixos-rebuild on git push.",
-      "url": "https://github.com/didactiklabs/ginx",
-      "highlights": ["Golang, Cobra, Viper"]
-    },
-    {
       "name": "NixBook",
       "description": "NixOS configuration for Laptops with customizable profiles and modules.",
       "url": "https://github.com/didactiklabs/nixbook",
