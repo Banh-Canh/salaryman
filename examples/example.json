@@ -101,6 +101,12 @@
       ]
     },
     {
+      "name": "Netwatch",
+      "description": "A tool to manage temporary Kubernetes network access via a web UI and a controller.",
+      "url": "https://github.com/Banh-Canh/netwatch",
+      "highlights": ["Golang, Kubebuilder, Kubernetes"]
+    },
+    {
       "name": "MaxTac",
       "description": "MaxTac is a Kubernetes controller that simplifies and automates the management of NetworkPolicy resources. It works by introducing two Custom Resource Definitions (CRDs), Access and ExternalAccess.",
       "url": "https://github.com/Banh-Canh/MaxTac",
