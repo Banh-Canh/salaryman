@@ -1,6 +1,6 @@
 module github.com/Banh-Canh/salaryman
 
-go 1.24
+go 1.24.0
 
 require (
 	github.com/chromedp/cdproto v0.0.0-20250724212937-08a3db8b4327
@@ -11,7 +11,7 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/ruang-guru/monday v1.0.3
 	github.com/spf13/cobra v1.9.1
-	golang.org/x/text v0.28.0
+	golang.org/x/text v0.32.0
 )
 
 require (
