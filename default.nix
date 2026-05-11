@@ -36,7 +36,7 @@ let
       "-X github.com/Banh-Canh/salaryman/cmd.version=nix"
     ];
 
-    vendorHash = "sha256-jck1S7M3IwQorOsIFx94F0rSI+BEy+aEy/ZyNSYH5SY=";
+    vendorHash = "sha256-wy80Hr5phYGp3yn9ieyk/LCpdnHm/R1gvcyPq25LrBY=";
 
     subPackages = [ "." ];
   };

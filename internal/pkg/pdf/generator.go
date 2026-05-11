@@ -35,7 +35,18 @@ func NewPDFGenerator() *Generator {
 func (g *Generator) GenerateFromHTML(file string) ([]byte, error) {
 	startedAt := time.Now()
 
-	chromeCtx, cancelCtx := chromedp.NewContext(context.Background())
+	opts := append(chromedp.DefaultExecAllocatorOptions[:],
+		chromedp.NoSandbox,
+		chromedp.Flag("disable-dev-shm-usage", true),
+	)
+	if p := os.Getenv("CHROME_PATH"); p != "" {
+		opts = append(opts, chromedp.ExecPath(p))
+	}
+
+	allocCtx, cancelAlloc := chromedp.NewExecAllocator(context.Background(), opts...)
+	defer cancelAlloc()
+
+	chromeCtx, cancelCtx := chromedp.NewContext(allocCtx)
 	defer cancelCtx()
 
 	var pdfData []byte

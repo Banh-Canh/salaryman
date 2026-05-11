@@ -6,11 +6,20 @@
   ),
   ...
 }:
+let
+  browsers = pkgs.playwright-driver.browsers;
+  headlessShellDir = builtins.head (
+    builtins.filter (e: pkgs.lib.hasPrefix "chromium_headless_shell-" e) (
+      builtins.attrNames (builtins.readDir browsers)
+    )
+  );
+in
 pkgs.mkShell {
   buildInputs = [
-    pkgs.google-chrome
+    browsers
     pkgs.go
   ];
+  CHROME_PATH = "${browsers}/${headlessShellDir}/chrome-headless-shell-linux64/chrome-headless-shell";
   packages = [
     (pkgs.writeShellScriptBin "salaryman" ''
       #!/bin/bash

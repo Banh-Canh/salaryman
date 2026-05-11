@@ -24,9 +24,21 @@
   },
   "work": [
     {
+      "company": "StackHPC",
+      "position": "Senior Tech Lead - Platform Team",
+      "startDate": "2026-04-07",
+      "summary": "Joined the Platform team as a Senior Tech Lead, working on Kubernetes and OpenStack infrastructure.",
+      "highlights": [],
+      "technicalEnvironment": {
+        "Orchestration": "Kubernetes",
+        "Cloud": "OpenStack"
+      }
+    },
+    {
       "company": "S3NS",
       "position": "Site Reliability Engineer",
       "startDate": "2023-06-01",
+      "endDate": "2026-03-31",
       "summary": "As a Site Reliability Engineer on the Compute & Virtualization team, I am responsible for engineering the core of a sovereign cloud platform from a Thales-Google Cloud partnership. My primary mission is to design, automate, and operate the internal Infrastructure-as-a-Service (IaaS) layer, ensuring high availability, robust security, and strict compliance with the French government's SecNumCloud standards.",
       "highlights": [
         "Design, deploy, and maintain the lifecycle of highly available Kubernetes clusters that serve as the foundation for the sovereign cloud.",
