@@ -10,7 +10,7 @@
   <header class="header">
     {{ template "profile.gohtml" . }}
     {{if .Basics.Image}}
-        <img src="{{ .Basics.Image }}" alt="Profile Picture" class="profile-picture">
+        <img src="{{ safeURL .Basics.Image }}" alt="Profile Picture" class="profile-picture">
     {{end}}
 </header>
 

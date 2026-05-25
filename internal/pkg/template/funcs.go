@@ -82,6 +82,14 @@ func evaluate(htmlStr string) template.HTML {
 	return template.HTML(htmlStr)
 }
 
+// safeURL marks a string as a trusted URL so html/template does not
+// neutralize it. Required for "data:" URLs (used when embedding a local
+// image as base64), which the engine would otherwise replace with
+// "#ZgotmplZ" as an XSS precaution.
+func safeURL(u string) template.URL {
+	return template.URL(u)
+}
+
 func lowerEq(s1 string, s2 string) bool {
 	return strings.EqualFold(strings.ToLower(s1), strings.ToLower(s2))
 }

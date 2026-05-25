@@ -4,8 +4,19 @@
      {{range .Projects }}
         <div class="project-item">
             <div class="project-title">{{.Name}}</div>
+            {{if .URL}}
             <a href="{{.URL}}" class="project-link">{{ trimURLPrefix .URL}}</a>
+            {{end}}
+            {{if .Description}}
             <div class="project-description">{{.Description}}</div>
+            {{end}}
+            {{if .Highlights}}
+            <ul class="project-highlights">
+                {{range .Highlights}}
+                    <li>{{.}}</li>
+                {{end}}
+            </ul>
+            {{end}}
         </div>
     {{end}}
 </section>

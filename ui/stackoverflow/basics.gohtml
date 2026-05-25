@@ -1,6 +1,6 @@
 <header id="header" class="clear">
     {{ if .Basics.Image }}
-    <img class="image" src="{{.Basics.Image}}" alt="{{ .Basics.Name }}" />
+    <img class="image" src="{{ safeURL .Basics.Image }}" alt="{{ .Basics.Name }}" />
     <div class="middle">
         <h1 class="name">{{ .Basics.Name }}</h1>
         <h2 class="label">{{ .Basics.Label }}</h2>

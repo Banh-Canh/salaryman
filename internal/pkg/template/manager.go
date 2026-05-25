@@ -31,6 +31,7 @@ func (tm *Manager) GetTemplate(name string) (*template.Template, error) {
 		"getFirstName":             getFirstName,
 		"getLastName":              getLastName,
 		"evaluate":                 evaluate,
+		"safeURL":                  safeURL,
 		"lowerEq":                  lowerEq,
 		"lower":                    lower,
 		"formatDate":               formatDate,
