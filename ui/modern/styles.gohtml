@@ -276,6 +276,23 @@
     }
 
      /* SKILLS */
+    .skills-categories {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-small);
+    }
+
+    .skill-category {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    .skill-category-name {
+        font-weight: bold;
+        font-size: var(--font-small);
+        margin-bottom: 0.25rem;
+    }
+
     .skills-list {
         display: flex;
         flex-wrap: wrap;
@@ -287,7 +304,7 @@
         page-break-inside: avoid;
         break-inside: avoid;
         background-color: var(--background-color);
-        padding: 0.3rem;
+        padding: 0.25rem 0.4rem;
         border-radius: 10px;
     }
 
@@ -342,6 +359,17 @@
 
     .project-description {
         font-size: var(--font-small);
+    }
+
+    .project-highlights {
+        margin-top: var(--gap-small);
+        padding-left: 1rem;
+    }
+
+    .project-highlights li {
+        font-size: var(--font-small);
+        text-align: justify;
+        margin-bottom: 0.15rem;
     }
 
     /* PUBLICATIONS */
@@ -412,12 +440,22 @@
     /* INTERESTS */
     .interests {
         display: flex;
-        flex-wrap: wrap;
-        gap: 0.2rem;
+        flex-direction: column;
+        gap: 0.25rem;
     }
 
-    .interest {
+    .interest-item {
         font-size: var(--font-small);
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    .interest-name {
+        font-weight: bold;
+    }
+
+    .interest-keywords {
+        color: var(--text-color-light);
     }
     
     

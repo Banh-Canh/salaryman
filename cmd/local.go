@@ -3,6 +3,7 @@ package cmd
 import (
 	"log/slog"
 	"os"
+	"path/filepath"
 
 	"github.com/spf13/cobra"
 
@@ -11,6 +12,7 @@ import (
 	"github.com/Banh-Canh/salaryman/internal/pkg/template"
 	"github.com/Banh-Canh/salaryman/internal/services"
 	"github.com/Banh-Canh/salaryman/internal/utils/fs"
+	"github.com/Banh-Canh/salaryman/internal/utils/image"
 	"github.com/Banh-Canh/salaryman/internal/utils/logger"
 )
 
@@ -77,6 +79,12 @@ func runLocalCommand(cmd *cobra.Command, args []string) error {
 	if templateName != "" {
 		resumeData.Meta.Template = templateName
 	}
+
+	resumeData.Basics.Image, err = image.EmbedLocal(resumeData.Basics.Image, filepath.Dir(resumeDataFile))
+	if err != nil {
+		return err
+	}
+
 	pdfData, err := resumeService.GeneratePDF(resumeData, outputFile)
 	if err != nil {
 		return err

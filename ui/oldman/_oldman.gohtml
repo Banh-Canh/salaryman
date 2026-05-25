@@ -12,7 +12,7 @@
     <aside id="left-column">
         {{if .Basics.Image}}
             <div class="photo">
-                <img src="{{.Basics.Image}}" alt="photo">
+                <img src="{{ safeURL .Basics.Image }}" alt="photo">
             </div>
         {{end}}
         <div class="content">

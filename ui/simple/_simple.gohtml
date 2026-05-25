@@ -14,7 +14,7 @@
             <div class="photo">
                 <img
                         class="round-img"
-                        src="{{.Basics.Image}}"
+                        src="{{ safeURL .Basics.Image }}"
                 />
             </div>
         {{end}}
