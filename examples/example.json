@@ -19,6 +19,11 @@
         "network": "Github",
         "username": "Banh-Canh",
         "url": "https://github.com/Banh-Canh"
+      },
+      {
+        "network": "Blog",
+        "username": "Banh-Canh",
+        "url": "https://banh-canh.github.io/posts/"
       }
     ]
   },
@@ -27,10 +32,14 @@
       "company": "StackHPC",
       "position": "Senior Tech Lead - Platform Team",
       "startDate": "2026-04-07",
-      "summary": "Joined the Platform team as a Senior Tech Lead, working on Kubernetes and OpenStack infrastructure.",
-      "highlights": [],
+      "summary": "Senior Tech Lead on the Platform team, developing features for an internal development platform serving HPC and research workloads on Kubernetes and OpenStack.",
+      "highlights": [
+        "Design and build platform features enabling researchers to self-service HPC and compute workloads.",
+        "Deliver Kubernetes-as-a-Service using Cluster API (CAPO) to provision and manage workload clusters on OpenStack.",
+        "Operate and evolve Kubernetes and OpenStack infrastructure underpinning the platform."
+      ],
       "technicalEnvironment": {
-        "Orchestration": "Kubernetes",
+        "Orchestration": "Kubernetes, Cluster API (CAPO)",
         "Cloud": "OpenStack"
       }
     },
@@ -39,17 +48,15 @@
       "position": "Site Reliability Engineer",
       "startDate": "2023-06-01",
       "endDate": "2026-03-31",
-      "summary": "As a Site Reliability Engineer on the Compute & Virtualization team, I am responsible for engineering the core of a sovereign cloud platform from a Thales-Google Cloud partnership. My primary mission is to design, automate, and operate the internal Infrastructure-as-a-Service (IaaS) layer, ensuring high availability, robust security, and strict compliance with the French government's SecNumCloud standards.",
+      "summary": "SRE on the Compute & Virtualization team engineering the IaaS core of a SecNumCloud-compliant sovereign cloud (Thales-Google Cloud partnership).",
       "highlights": [
-        "Design, deploy, and maintain the lifecycle of highly available Kubernetes clusters that serve as the foundation for the sovereign cloud.",
-        "Engineer a VM-as-a-Service experience using KubeVirt to run and manage virtual machines directly within Kubernetes via standard APIs.",
-        "Architect and manage the cloud's virtual network infrastructure using KubeOVN and Multus, configuring complex multi-homed networking topologies and security policies.",
-        "Implement and manage NixOS to create a fully declarative, reproducible, and immutable operating system environment, enhancing security and reducing configuration drift.",
-        "Develop custom Kubernetes operators and controllers in Golang using the Kubebuilder framework to automate complex operational tasks and manage custom resources.",
-        "Operate within a hybrid environment leveraging GCP primitives while ensuring all operations adhere to strict sovereign cloud principles and SecNumCloud controls."
+        "Built and operated highly available Kubernetes clusters as the sovereign cloud foundation.",
+        "Delivered Kubernetes-as-a-Service with Cluster API (CAPK) to provision and manage workload clusters on KubeVirt.",
+        "Delivered a VM-as-a-Service experience with KubeVirt and multi-homed networking via KubeOVN/Multus.",
+        "Managed a declarative NixOS environment and built Golang operators with Kubebuilder to automate operations."
       ],
       "technicalEnvironment": {
-        "Orchestration": "Kubernetes, Kubevirt, Kubebuilder",
+        "Orchestration": "Kubernetes, Cluster API (CAPK), Kubevirt, Kubebuilder",
         "Networking": "KubeOVN, Multus",
         "Operating System": "NixOS",
         "Programming": "Golang",
@@ -63,13 +70,11 @@
       "position": "DevOps Consultant at Orange Business Service",
       "startDate": "2022-11-01",
       "endDate": "2023-06-01",
-      "summary": "As a Level 3 DevOps Consultant for SFEIR, I was embedded with the client, Orange Business Services, to serve as a senior technical authority. My role involved architecting resilient cloud-native solutions, resolving complex systemic issues, and mentoring client teams on DevOps best practices for automation, security, and large-scale observability.",
+      "summary": "Level 3 DevOps Consultant embedded at Orange Business Services as a senior technical authority for cloud-native architecture and DevOps best practices.",
       "highlights": [
-        "Architected and implemented scalable and secure cloud infrastructure on AWS using Terraform, creating reusable modules for core services like VPC, EKS, and IAM.",
-        "Ensured the stability, security, and performance of mission-critical Kubernetes clusters, handling cluster upgrades, advanced troubleshooting, and security policy implementation.",
-        "Utilized Saltstack for configuration management of legacy systems and bare-metal servers, ensuring consistent integration with cloud-native infrastructure.",
-        "Implemented and managed a centralized secrets management strategy using HashiCorp Vault, integrating it with both the Terraform IaC pipeline and Kubernetes workloads.",
-        "Designed and maintained a comprehensive observability stack using Prometheus, Thanos, and Grafana to provide a unified, long-term view of system health across distributed environments."
+        "Architected secure AWS infrastructure with Terraform (VPC, EKS, IAM) and operated mission-critical Kubernetes clusters.",
+        "Centralized secrets with HashiCorp Vault across Terraform and Kubernetes workloads.",
+        "Built a long-term observability stack with Prometheus, Thanos, and Grafana."
       ],
       "technicalEnvironment": {
         "Cloud": "AWS (a little bit)",
@@ -85,13 +90,11 @@
       "position": "DevOps Administrator | SysOps",
       "startDate": "2021-06-01",
       "endDate": "2022-10-01",
-      "summary": "As a key member of a dedicated DevOps squad, I was tasked with the design and construction of an internal Kubernetes-as-a-Service (KaaS) platform. The goal was to deliver a fully self-service, automated, and secure platform for internal development teams to build, deploy, and manage their applications.",
+      "summary": "DevOps engineer in a squad building an internal, self-service Kubernetes-as-a-Service (KaaS) platform for development teams.",
       "highlights": [
-        "Contributed to the construction of the KaaS platform from the ground up, using Ansible to automate the provisioning of servers and the deployment of Kubernetes clusters.",
-        "Implemented a GitOps workflow using ArgoCD, ensuring all platform and application configuration changes were version-controlled, auditable, and automatically deployed.",
-        "Designed and managed robust CI/CD pipelines using GitLab CI/CD to automate the build, testing, and deployment of containerized applications.",
-        "Secured the platform by integrating HashiCorp Vault for secrets management and Keycloak for centralized OIDC authentication and authorization (IAM).",
-        "Maintained the health and performance of the underlying Linux servers, storage, and networking infrastructure that supported the KaaS platform."
+        "Built the KaaS platform from scratch, automating server and cluster provisioning with Ansible.",
+        "Implemented GitOps with ArgoCD and CI/CD pipelines with GitLab CI/CD.",
+        "Secured the platform with HashiCorp Vault and Keycloak (OIDC IAM)."
       ],
       "technicalEnvironment": {
         "Orchestration": "Kubernetes",
@@ -144,72 +147,68 @@
   ],
   "projects": [
     {
-      "name": "Home Cluster",
-      "description": "A comprehensive, personal Kubernetes-as-a-Service (KaaS) platform designed to replicate a professional cloud-native environment for home use. Built on Proxmox for virtualization, the entire infrastructure is declaratively managed with NixOS and a GitOps workflow powered by FluxCD. This ensures perfect reproducibility and automated configuration management. The architecture achieves secure multi-tenancy by using Kamaji to run Kubernetes control planes as pods within a management cluster, providing strong isolation. Identity and access are centralized through Zitadel, while HashiCorp Vault manages secrets securely. The platform serves as a powerful environment for hosting personal media servers, home automation, and for experimenting with advanced cloud-native technologies.",
-      "url": "https://github.com/Bealvio/bealv",
+      "name": "Chihiro",
+      "description": "A Go web app that watches Cluster API (CAPI) resources and offers a self-service dashboard to create, edit, and delete workload clusters via a config-driven templating engine, with OIDC auth and group-based RBAC.",
+      "url": "https://github.com/RPCU/chihiro",
       "highlights": [
-        "NixOS & Nix Flakes for Reproducibility",
-        "Kubernetes & ClusterAPI for Cluster Management",
-        "Kamaji for Multi-Tenant Control Planes",
-        "GitOps via FluxCD for Automation",
-        "Proxmox VE for Virtualization",
-        "Zitadel for Identity & Access Management (IAM)"
+        "Golang, OIDC auth, real-time UI over WebSockets",
+        "Config-driven CAPI cluster templating engine",
+        "Group-based RBAC & resource limits"
+      ]
+    },
+    {
+      "name": "RPCU",
+      "description": "An open source, multi-tenant cloud platform built from scratch on baremetal, running OpenStack as Kubernetes operators (Yaook) on a reproducible NixOS foundation, with CAPI workload clusters and full GitOps via Flux.",
+      "url": "https://github.com/RPCU",
+      "highlights": [
+        "OpenStack control plane as Kubernetes operators (Yaook)",
+        "NixOS/Colmena nodes with Cluster API (CAPO) workload clusters",
+        "Flux GitOps, Sveltos add-ons, Rook/Ceph & Cilium"
       ]
     },
     {
       "name": "Netwatch",
-      "description": "A powerful security and operations tool for Kubernetes that automates the management of temporary network access. It addresses the common operational need for granting developers or SREs short-term access to specific services (e.g., a database for debugging) without leaving permanent security holes. Netwatch introduces a 'NetworkAccess' Custom Resource (CRD) where a user can request access with a specified duration. The Netwatch controller then automatically generates a corresponding, temporary Kubernetes NetworkPolicy. Once the defined duration expires, the controller automatically removes the NetworkPolicy, ensuring the principle of least privilege is maintained and the cluster remains secure.",
+      "description": "A Kubernetes controller that grants temporary, time-boxed network access via a 'NetworkAccess' CRD, automatically creating and expiring NetworkPolicies to enforce least privilege.",
       "url": "https://github.com/Banh-Canh/netwatch",
       "highlights": [
-        "Golang",
-        "Kubernetes Controller (Kubebuilder)",
-        "Custom Resource Definitions (CRD)",
-        "Dynamic NetworkPolicy Automation",
-        "Web UI for Access Management"
+        "Golang, Kubernetes controller (Kubebuilder)",
+        "Dynamic, time-boxed NetworkPolicy automation via CRD"
       ]
     },
     {
       "name": "MaxTac",
-      "description": "A Kubernetes controller created to abstract away the complexity of writing and managing native Kubernetes NetworkPolicy resources. It solves the problem of NetworkPolicies being verbose, difficult to reason about, and prone to misconfiguration. MaxTac introduces two intuitive Custom Resource Definitions (CRDs)—'Access' for internal traffic and 'ExternalAccess' for ingress/egress. These CRDs provide a simpler, higher-level abstraction for developers to define connectivity rules based on application logic rather than low-level pod and port selectors. The controller translates these simple CRDs into the appropriate, more complex NetworkPolicy YAML, reducing cognitive load and improving the security posture of the cluster.",
+      "description": "A Kubernetes controller that abstracts verbose NetworkPolicies behind simple 'Access' and 'ExternalAccess' CRDs, letting developers define connectivity by application logic instead of low-level selectors.",
       "url": "https://github.com/Banh-Canh/MaxTac",
       "highlights": [
-        "Golang",
-        "Kubernetes Controller (Kubebuilder)",
-        "NetworkPolicy Abstraction & Automation",
-        "Developer-Friendly Custom Resource Definitions (CRD)"
+        "Golang, Kubernetes controller (Kubebuilder)",
+        "Developer-friendly NetworkPolicy abstraction via CRDs"
       ]
     },
     {
       "name": "Songbird",
-      "description": "A command-line interface (CLI) tool that acts as a linter and simulator for Kubernetes network connectivity, designed to prevent network-related outages. In a complex cluster with numerous NetworkPolicies, it's challenging to predict the outcome of a change. Songbird solves this by allowing operators to proactively evaluate their NetworkPolicy configuration. It can simulate traffic flow between any two points in the cluster and report whether the current policy set would allow or deny the connection. This enables teams to validate their network security rules in a CI/CD pipeline or locally before applying them to a live cluster, thereby preventing accidental service disruptions.",
+      "description": "A CLI tool that lints and simulates Kubernetes network connectivity, evaluating NetworkPolicies to predict whether traffic is allowed or denied before changes reach a live cluster.",
       "url": "https://github.com/Banh-Canh/songbird",
       "highlights": [
-        "Golang",
-        "Kubernetes API Integration",
-        "NetworkPolicy Analysis & Simulation",
-        "Pre-deployment Validation CLI Tool"
+        "Golang, Kubernetes API integration",
+        "NetworkPolicy simulation & pre-deployment validation"
       ]
     },
     {
       "name": "NixBook",
-      "description": "A declarative and modular NixOS configuration framework specifically tailored for laptops. It addresses the classic 'it works on my machine' problem by allowing a developer's entire operating system—from the kernel and system packages to application configurations and dotfiles—to be defined as code using Nix Flakes. This ensures a perfectly reproducible, version-controlled environment that can be easily shared and deployed across multiple machines. The framework is designed with customizable profiles and modules, making it simple to manage different setups (e.g., for work and personal use) from a single, clean codebase.",
+      "description": "A declarative, modular NixOS framework for laptops that defines the entire OS (packages, configs, dotfiles) as code with Nix Flakes for reproducible, shareable environments.",
       "url": "https://github.com/didactiklabs/nixbook",
       "highlights": [
-        "NixOS & Nix Flakes",
-        "Declarative OS Configuration",
-        "Reproducible Developer Environments",
-        "Modular System Profiles with Home-Manager"
+        "NixOS & Nix Flakes, declarative OS configuration",
+        "Modular profiles with Home-Manager"
       ]
     },
     {
       "name": "NixOS-Server",
-      "description": "A server-focused NixOS configuration that applies declarative and GitOps principles to manage bare-metal infrastructure. This repository contains a complete, code-defined setup for servers that host Kubernetes clusters. Every aspect of the server environment, including networking, storage, system packages, and security hardening, is defined in Nix code and managed in a Git repository. Changes to the infrastructure are made via a git push, which triggers an automated deployment process. This provides a powerful audit trail, enables atomic updates and rollbacks, and ensures that the entire server fleet remains in a consistent, predictable, and reproducible state.",
+      "description": "A server-focused NixOS configuration applying declarative and GitOps principles to bare-metal Kubernetes hosts, where every change is a git push enabling atomic updates and rollbacks.",
       "url": "https://github.com/didactiklabs/nixOS-server",
       "highlights": [
-        "NixOS & Nix Flakes",
-        "GitOps for Bare-Metal (FluxCD)",
-        "Declarative Infrastructure as Code",
-        "Automated Kubernetes Host Provisioning"
+        "NixOS & Nix Flakes, GitOps for bare-metal (FluxCD)",
+        "Automated, reproducible Kubernetes host provisioning"
       ]
     }
   ],
