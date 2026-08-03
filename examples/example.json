@@ -2,7 +2,7 @@
   "basics": {
     "name": "Victor Hang",
     "email": "vhvictorhang@gmail.com",
-    "label": "Site Reliability Engineer",
+    "label": "Senior Site Reliability Engineer",
     "image": "https://immich.bealv.io/api/assets/738b17c1-5115-44dd-81ca-90efd5173851/thumbnail?key=eHa_uTm1qRR7djy95vEYbLg-6ymJl-FLguYIY4qrVUrmhRXlpxpT7VZX2sD7PJTJgk0&size=preview&c=KAgGFQK6RWCcZWbIaImHt2h%2FhfNH",
     "location": {
       "city": "Bordeaux",
@@ -53,6 +53,9 @@
         "Built and operated highly available Kubernetes clusters as the sovereign cloud foundation.",
         "Delivered Kubernetes-as-a-Service with Cluster API (CAPK) to provision and manage workload clusters on KubeVirt.",
         "Delivered a VM-as-a-Service experience with KubeVirt and multi-homed networking via KubeOVN/Multus.",
+        "Ran production infrastructure atop GCP and Google's internal backend (Borg), owning reliability for the sovereign cloud IaaS core.",
+        "Held on-call responsibility for production services, driving incident response, root-cause analysis, and post-incident follow-up to meet SLOs.",
+        "Collaborated directly with Google engineers on design reviews and knowledge transfer to align the platform with Google Cloud practices.",
         "Managed a declarative NixOS environment and built Golang operators with Kubebuilder to automate operations."
       ],
       "technicalEnvironment": {
@@ -61,7 +64,8 @@
         "Operating System": "NixOS",
         "Programming": "Golang",
         "CI/CD": "FluxCD, Woodpecker",
-        "Cloud": "Google Cloud Platform (GCP)",
+        "Cloud": "Google Cloud Platform (GCP), Borg",
+        "Reliability": "Production operations, On-call, Incident response",
         "Methodologies": "SRE, Infrastructure as Code, GitOps, DevSecOps"
       }
     },
@@ -220,7 +224,9 @@
         "Kubevirt",
         "Cluster API",
         "Vault",
-        "FluxCD/ArgoCD",
+        "FluxCD/ArgoCD/Sveltos",
+        "Openstack",
+        "Kamaji",
         "Monitoring"
       ]
     },
