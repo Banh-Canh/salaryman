@@ -44,7 +44,7 @@
       }
     },
     {
-      "company": "S3NS",
+      "company": "Thales Cloud Sécurisé",
       "position": "Site Reliability Engineer",
       "startDate": "2023-06-01",
       "endDate": "2026-03-31",
@@ -130,6 +130,13 @@
         "MS SQL Server",
         "Oracle SQL Server"
       ]
+    },
+    {
+      "institution": "Université de Bordeaux",
+      "area": "Chemistry",
+      "studyType": "Bachelor",
+      "startDate": "2015",
+      "endDate": "2018"
     }
   ],
   "certificates": [
