@@ -133,10 +133,32 @@
     },
     {
       "institution": "Université de Bordeaux",
+      "area": "Materials Chemistry",
+      "studyType": "Master (1st year)",
+      "startDate": "2018",
+      "endDate": "2019",
+      "courses": [
+        "Solid-State Chemistry",
+        "Polymer Chemistry",
+        "Crystallography",
+        "Materials Characterization",
+        "Nanomaterials"
+      ]
+    },
+    {
+      "institution": "Université de Bordeaux",
       "area": "Chemistry",
       "studyType": "Bachelor",
       "startDate": "2015",
-      "endDate": "2018"
+      "endDate": "2018",
+      "courses": [
+        "Organic Chemistry",
+        "Inorganic Chemistry",
+        "Analytical Chemistry",
+        "Physical Chemistry",
+        "Spectroscopy",
+        "Laboratory Techniques"
+      ]
     }
   ],
   "certificates": [
