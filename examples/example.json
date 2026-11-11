@@ -66,15 +66,15 @@
         "CI/CD": "FluxCD, Woodpecker",
         "Cloud": "Google Cloud Platform (GCP), Borg",
         "Reliability": "Production operations, On-call, Incident response",
-        "Methodologies": "SRE, Infrastructure as Code, GitOps, DevSecOps"
+        "Methodologies": "SRE, Infrastructure as Code, GitOps, DevSecOps (Development, Security and Operations)"
       }
     },
     {
       "company": "SFEIR",
-      "position": "DevOps Consultant at Orange Business Service",
+      "position": "DevOps (Development and Operations) Consultant at Orange Business Service",
       "startDate": "2022-11-01",
       "endDate": "2023-06-01",
-      "summary": "Level 3 DevOps Consultant embedded at Orange Business Services as a senior technical authority for cloud-native architecture and DevOps best practices.",
+      "summary": "Level 3 DevOps (Development and Operations) Consultant embedded at Orange Business Services as a senior technical authority for cloud-native architecture and DevOps (Development and Operations) best practices.",
       "highlights": [
         "Architected secure AWS infrastructure with Terraform (VPC, EKS, IAM) and operated mission-critical Kubernetes clusters.",
         "Centralized secrets with HashiCorp Vault across Terraform and Kubernetes workloads.",
@@ -91,10 +91,10 @@
     },
     {
       "company": "CHEOPS TECHNOLOGY",
-      "position": "DevOps Administrator | SysOps",
+      "position": "DevOps (Development and Operations) Administrator | SysOps (Systems Operations)",
       "startDate": "2021-06-01",
       "endDate": "2022-10-01",
-      "summary": "DevOps engineer in a squad building an internal, self-service Kubernetes-as-a-Service (KaaS) platform for development teams.",
+      "summary": "DevOps (Development and Operations) engineer in a squad building an internal, self-service Kubernetes-as-a-Service (KaaS) platform for development teams.",
       "highlights": [
         "Built the KaaS platform from scratch, automating server and cluster provisioning with Ansible.",
         "Implemented GitOps with ArgoCD and CI/CD pipelines with GitLab CI/CD.",
@@ -105,14 +105,14 @@
         "Automation & Config Management": "Ansible",
         "CI/CD & GitOps": "GitLab CI/CD, ArgoCD",
         "Security & IAM": "HashiCorp Vault, Keycloak",
-        "Methodologies": "DevOps, Infrastructure as Code"
+        "Methodologies": "DevOps (Development and Operations), Infrastructure as Code"
       }
     }
   ],
   "education": [
     {
       "institution": "ib - groupe Cegos",
-      "area": "DevOps Consultant",
+      "area": "DevOps (Development and Operations) Consultant",
       "startDate": "2021",
       "endDate": "2021",
       "courses": ["Docker", "Kubernetes", "Python", "Ansible", "AWS", "Jenkins"]
